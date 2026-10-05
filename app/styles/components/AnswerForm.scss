@@ -1,0 +1,50 @@
+.answer-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: min(100%, 380px);
+  
+    :deep(.app-button) {
+      width: 100%;
+    }
+  
+    :deep(.app-button:disabled) {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  
+    span {
+      color: #44403c;
+      font: 600 0.85rem/1 ui-sans-serif, system-ui, sans-serif;
+    }
+  
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 46px;
+      padding: 0 14px;
+      border: 1px solid #d6d3d1;
+      border-radius: 12px;
+      background: #fafaf9;
+      color: #1c1917;
+      font: 400 0.95rem/1 ui-sans-serif, system-ui, sans-serif;
+  
+      &:focus {
+        outline: none;
+        border-color: #1c1917;
+        background: #ffffff;
+        box-shadow: 0 0 0 4px rgba(28, 25, 23, 0.08);
+      }
+  
+      &:disabled {
+        opacity: 0.6;
+      }
+    }
+  }

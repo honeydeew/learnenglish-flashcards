@@ -1,0 +1,100 @@
+.register-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: min(100%, 380px);
+    margin: 0;
+    padding: 28px;
+    border: 1px solid #e7e5e4;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 16px 40px rgba(28, 25, 23, 0.08);
+
+    :deep(.app-button) {
+        width: 100%;
+        margin-top: 4px;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+        color: #44403c;
+        font: 600 0.85rem/1 ui-sans-serif, system-ui, sans-serif;
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 46px;
+        padding: 0 14px;
+        border: 1px solid #d6d3d1;
+        border-radius: 12px;
+        background: #fafaf9;
+        color: #1c1917;
+        font: 400 0.95rem/1 ui-sans-serif, system-ui, sans-serif;
+        transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+
+        &::placeholder {
+            color: #a8a29e;
+        }
+
+        &:hover {
+            border-color: #a8a29e;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #1c1917;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(28, 25, 23, 0.08);
+        }
+    }
+}
+
+.register-note {
+    margin: 0;
+    color: #78716c;
+    font: 400 0.9rem/1.4 ui-sans-serif, system-ui, sans-serif;
+    text-align: center;
+
+    a {
+        color: #1c1917;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form-error {
+    margin: 0;
+    color: #b91c1c;
+    font: 500 0.9rem/1.4 ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .password-wrap {
+    position: relative;
+  
+    input {
+      padding-right: 72px;
+    }
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    border: 0;
+    background: transparent;
+    color: #44403c;
+    font: 600 0.8rem/1 ui-sans-serif, system-ui, sans-serif;
+    cursor: pointer;
+  }

@@ -1,0 +1,15 @@
+.feedback {
+    margin: 0;
+    width: min(100%, 380px);
+    font: 600 0.95rem/1.4 ui-sans-serif, system-ui, sans-serif;
+    text-align: center;
+  }
+  
+  .feedback-ok {
+    color: #3f6212;
+  }
+  
+  .feedback-wrong,
+  .feedback-reveal {
+    color: #9a3412;
+  }

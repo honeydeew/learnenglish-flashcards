@@ -1,0 +1,36 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+    background: #ffffff;
+    border-bottom: 1px solid #e7e5e4;
+  }
+  
+  .app-header-name {
+    margin: 0;
+    color: #1c1917;
+    font: 600 0.95rem/1 ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  
+    a,
+    button {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #44403c;
+      font: 600 0.95rem/1 ui-sans-serif, system-ui, sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    a.router-link-active {
+      color: #1c1917;
+    }
+  }

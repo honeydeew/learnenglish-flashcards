@@ -1,0 +1,1 @@
+export { default as LearnedWordList } from './LearnedWordList.vue'
